@@ -40,7 +40,13 @@ BOT_ID = bot_info.id
 # USE YOUR ROTATING PROXY API IN DICT FORMAT http://user:pass@providerhost:port
 proxies = {
            'http': 'http://irkltmyj-rotate:f2oyleso9r2u@p.webshare.io:80/',
-           'https': 'http://irkltmyj-rotate:f2oyleso9r2u@p.webshare.io:80/'
+           'http': 'http://irkltmyj-rotate:f2oyleso9r2u@p.webshare.io:80/',
+           'http': 'http://drhdnqxq-rotate:9g4otsb2o2wz@p.webshare.io:80/',
+           'http': 'http://drhdnqxq-rotate:9g4otsb2o2wz@p.webshare.io:80/',
+           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
+           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
+           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
+           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/'
 }
 
 session = requests.Session()
@@ -139,7 +145,7 @@ async def ch(message: types.Message):
         await dp.throttle('chk', rate=ANTISPAM)
     except Throttled:
         await message.reply('<b>Too many requests!</b>\n'
-                            f'Blocked For {ANTISPAM} seconds')
+                            f'Bloqueado por {ANTISPAM} segundos')
     else:
         if message.reply_to_message:
             cc = message.reply_to_message.text
@@ -239,43 +245,43 @@ async def ch(message: types.Message):
         if 'success' in ri.text:
             return await message.reply(f'''
 ✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ #ApprovedCVV
+<b>STATUS</b>➟ #ApprovedCVV ☘️
 <b>MSG</b>➟ {ri.text}
-<b>PROXY-IP</b> <code>{b}</code>
+🌍<b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
+🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
 <b>OWNER</b>: {await is_owner(ID)}
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         if 'incorrect_cvc' in ri.text:
             return await message.reply(f'''
 ✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ #ApprovedCCN
+<b>STATUS</b>➟ #ApprovedCCN ♻️
 <b>MSG</b>➟ {ri.text}
-<b>PROXY-IP</b> <code>{b}</code>
+🌍<b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
+🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
 <b>OWNER</b>: {await is_owner(ID)}
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         if 'declined' in ri.text:
             return await message.reply(f'''
 ❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ Declined
+<b>STATUS</b>➟ Declined 🛑
 <b>MSG</b>➟ {ri.text}
-<b>PROXY-IP</b> <code>{b}</code>
+🌍<b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
+🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
 <b>OWNER</b>: {await is_owner(ID)}
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         await message.reply(f'''
 ❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ DEAD
+<b>STATUS</b>➟ DEAD 🛑
 <b>MSG</b>➟ {ri.text}
-<b>PROXY-IP</b> <code>{b}</code>
+🌍<b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
+🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
 <b>OWNER</b>: {await is_owner(ID)}
 <b>BOT</b>: @{BOT_USERNAME}''')
 
