@@ -76,8 +76,8 @@ async def helpstr(message: types.Message):
     keyboard_markup.row(btns)
     FIRST = message.from_user.first_name
     MSG = f'''
-Hello {FIRST}, Im {BOT_NAME}
-U can find my Boss  <a href="tg://user?id={OWNER}">HERE</a>
+Hola {FIRST}, soy {BOT_NAME} 🌟
+Puedes conocer a mi owner  <a href="tg://user?id={OWNER}">HERE</a>
 Cmds /chk /info /bin'''
     await message.answer(MSG, reply_markup=keyboard_markup,
                         disable_web_page_preview=True)
@@ -145,7 +145,7 @@ async def ch(message: types.Message):
         await dp.throttle('chk', rate=ANTISPAM)
     except Throttled:
         await message.reply('<b>Too many requests!</b>\n'
-                            f'Bloqueado por {ANTISPAM} segundos')
+                            f'Bloqueado por {ANTISPAM} segundos 👾')
     else:
         if message.reply_to_message:
             cc = message.reply_to_message.text
