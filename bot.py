@@ -78,7 +78,7 @@ async def helpstr(message: types.Message):
     MSG = f'''
 Hola {FIRST}, soy {BOT_NAME} 🌟
 Puedes conocer a mi owner  <a href="tg://user?id={OWNER}">HERE</a>
-Cmds /chk /info /bin'''
+Cmds /chr /info /bin'''
     await message.answer(MSG, reply_markup=keyboard_markup,
                         disable_web_page_preview=True)
 
@@ -135,14 +135,14 @@ OWNER⇢ <a href="tg://user?id={OWNER}">LINK</a>
     await message.reply(INFO)
 
 
-@dp.message_handler(commands=['chk'], commands_prefix=PREFIX)
+@dp.message_handler(commands=['chr'], commands_prefix=PREFIX)
 async def ch(message: types.Message):
     await message.answer_chat_action('typing')
     tic = time.perf_counter()
     ID = message.from_user.id
     FIRST = message.from_user.first_name
     try:
-        await dp.throttle('chk', rate=ANTISPAM)
+        await dp.throttle('chr', rate=ANTISPAM)
     except Throttled:
         await message.reply('<b>Too many requests!</b>\n'
                             f'Bloqueado por {ANTISPAM} segundos 👾')
@@ -150,10 +150,10 @@ async def ch(message: types.Message):
         if message.reply_to_message:
             cc = message.reply_to_message.text
         else:
-            cc = message.text[len('/chk '):]
+            cc = message.text[len('/chr '):]
 
         if len(cc) == 0:
-            return await message.reply("<b>No Card to chk</b>")
+            return await message.reply("<b>No Card to chr</b>")
 
         x = re.findall(r'\d+', cc)
         ccn = x[0]
