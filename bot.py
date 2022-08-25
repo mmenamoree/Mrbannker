@@ -249,7 +249,7 @@ async def ch(message: types.Message):
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
-<b>OWNER</b>@mmenamore
+<b>OWNER</b>:@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         if 'incorrect_cvc' in ri.text:
@@ -262,7 +262,7 @@ async def ch(message: types.Message):
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
-<b>OWNER</b>@mmenamore
+<b>OWNER</b>:@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         if 'declined' in ri.text:
@@ -275,7 +275,7 @@ async def ch(message: types.Message):
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
-<b>OWNER</b>@mmenamore
+<b>OWNER</b>:@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         await message.reply(f'''
@@ -287,7 +287,7 @@ async def ch(message: types.Message):
 🌍<b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 <b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
-<b>OWNER</b>@mmenamore
+<b>OWNER</b>:@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
 
