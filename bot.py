@@ -240,11 +240,12 @@ async def ch(message: types.Message):
 
         if 'success' in ri.text:
             return await message.reply(f'''
-<b>GATEWAY STRIPE CHARGED</b>          
-✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>GATEWAY STRIPE CHARGED</b>
+<b>VIVA</b>✅
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ #ApprovedCVV ☘️
 <b>MSG</b>➟ {ri.text}
-🌍<b>PROXY-IP</b> <code>{b}</code>
+<b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
 <b>OWNER</b>: {await is_owner(ID)}
@@ -252,11 +253,12 @@ async def ch(message: types.Message):
 
         if 'incorrect_cvc' in ri.text:
             return await message.reply(f'''
-<b>GATEWAY STRIPE CHARGED</b>             
-✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>GATEWAY STRIPE CHARGED</b>
+<b>VIVA</b>✅
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ #ApprovedCCN ♻️
 <b>MSG</b>➟ {ri.text}
-🌍<b>PROXY-IP</b> <code>{b}</code>
+<b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
 <b>OWNER</b>: {await is_owner(ID)}
@@ -264,20 +266,22 @@ async def ch(message: types.Message):
 
         if 'declined' in ri.text:
             return await message.reply(f'''
-<b>GATEWAY STRIPE CHARGED</b>             
-❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ Declined 🛑
+<b>GATEWAY STRIPE CHARGED</b>
+<b>MUERTA</b>❌
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>STATUS</b>➟ Declined❌
 <b>MSG</b>➟ {ri.text}
-🌍<b>PROXY-IP</b> <code>{b}</code>
+<b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
 🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
 <b>OWNER</b>: {await is_owner(ID)}
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         await message.reply(f'''
- <b>GATEWAY STRIPE CHARGED</b>        
-❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ DEAD 🛑
+ <b>GATEWAY STRIPE CHARGED</b>
+ <b>MUERTA</b>❌
+<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
+<b>STATUS</b>➟ DEAD❌
 <b>MSG</b>➟ {ri.text}
 🌍<b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
