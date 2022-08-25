@@ -39,14 +39,10 @@ BOT_ID = bot_info.id
 
 # USE YOUR ROTATING PROXY API IN DICT FORMAT http://user:pass@providerhost:port
 proxies = {
-           'http': 'http://irkltmyj-rotate:f2oyleso9r2u@p.webshare.io:80/',
-           'http': 'http://irkltmyj-rotate:f2oyleso9r2u@p.webshare.io:80/',
-           'http': 'http://drhdnqxq-rotate:9g4otsb2o2wz@p.webshare.io:80/',
-           'http': 'http://drhdnqxq-rotate:9g4otsb2o2wz@p.webshare.io:80/',
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/'
+           'http': 'http://nkaozoda-rotate:d3oinv9faiqj@p.webshare.io:80/',
+           'http': 'http://nkaozoda-rotate:d3oinv9faiqj@p.webshare.io:80/',
+           'http': 'http://gfzcrhty-rotate:xybgwrcinb4y@p.webshare.io:80/',
+           'http': 'http://gfzcrhty-rotate:xybgwrcinb4y@p.webshare.io:80/'                    
 }
 
 session = requests.Session()
@@ -153,7 +149,7 @@ async def ch(message: types.Message):
             cc = message.text[len('/chr '):]
 
         if len(cc) == 0:
-            return await message.reply("<b>No Card to chr</b>")
+            return await message.reply("<b>Stripe Charged 4.99, ingrese su tarjeta</b>")
 
         x = re.findall(r'\d+', cc)
         ccn = x[0]
@@ -244,6 +240,7 @@ async def ch(message: types.Message):
 
         if 'success' in ri.text:
             return await message.reply(f'''
+<b>GATEWAY STRIPE CHARGED</b>          
 ✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ #ApprovedCVV ☘️
 <b>MSG</b>➟ {ri.text}
@@ -255,6 +252,7 @@ async def ch(message: types.Message):
 
         if 'incorrect_cvc' in ri.text:
             return await message.reply(f'''
+<b>GATEWAY STRIPE CHARGED</b>             
 ✅<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ #ApprovedCCN ♻️
 <b>MSG</b>➟ {ri.text}
@@ -266,6 +264,7 @@ async def ch(message: types.Message):
 
         if 'declined' in ri.text:
             return await message.reply(f'''
+<b>GATEWAY STRIPE CHARGED</b>             
 ❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ Declined 🛑
 <b>MSG</b>➟ {ri.text}
@@ -276,6 +275,7 @@ async def ch(message: types.Message):
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         await message.reply(f'''
+ <b>GATEWAY STRIPE CHARGED</b>        
 ❌<b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
 <b>STATUS</b>➟ DEAD 🛑
 <b>MSG</b>➟ {ri.text}
