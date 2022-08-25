@@ -244,7 +244,7 @@ async def ch(message: types.Message):
 <b>GATEWAY STRIPE CHARGED</b>
 <b>VIVA</b>✅
 <b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ #ApprovedCVV CHARGED☘️
+<b>STATUS</b>➟ #ApprovedCVV ☘️
 <b>MSG</b>➟ {ri.text}
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
@@ -257,7 +257,7 @@ async def ch(message: types.Message):
 <b>GATEWAY STRIPE CHARGED</b>
 <b>VIVA</b>✅
 <b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ #ApprovedCCN CHARGED♻️
+<b>STATUS</b>➟ #ApprovedCCN ♻️
 <b>MSG</b>➟ {ri.text}
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
