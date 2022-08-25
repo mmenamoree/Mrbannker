@@ -73,6 +73,7 @@ async def helpstr(message: types.Message):
     FIRST = message.from_user.first_name
     MSG = f'''
 Hola {FIRST}, soy {BOT_NAME} 🌸
+Por ahora solo tengo una gate Stripe Charged 4.99
 Puedes conocer a mi owner  <a href="tg://user?id={OWNER}">HERE</a>
 Cmds /chr /info /bin'''
     await message.answer(MSG, reply_markup=keyboard_markup,
@@ -243,12 +244,12 @@ async def ch(message: types.Message):
 <b>GATEWAY STRIPE CHARGED</b>
 <b>VIVA</b>✅
 <b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ #ApprovedCVV ☘️
+<b>STATUS</b>➟ #ApprovedCVV CHARGED☘️
 <b>MSG</b>➟ {ri.text}
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
-<b>OWNER</b>: {await is_owner(ID)}
+<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
+<b>OWNER</b>@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         if 'incorrect_cvc' in ri.text:
@@ -256,12 +257,12 @@ async def ch(message: types.Message):
 <b>GATEWAY STRIPE CHARGED</b>
 <b>VIVA</b>✅
 <b>CC</b>➟ <code>{ccn}|{mm}|{yy}|{cvv}</code>
-<b>STATUS</b>➟ #ApprovedCCN ♻️
+<b>STATUS</b>➟ #ApprovedCCN CHARGED♻️
 <b>MSG</b>➟ {ri.text}
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
-<b>OWNER</b>: {await is_owner(ID)}
+<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
+<b>OWNER</b>@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         if 'declined' in ri.text:
@@ -273,8 +274,8 @@ async def ch(message: types.Message):
 <b>MSG</b>➟ {ri.text}
 <b>PROXY-IP</b>🌍
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
-<b>OWNER</b>: {await is_owner(ID)}
+<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
+<b>OWNER</b>@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
         await message.reply(f'''
@@ -285,8 +286,8 @@ async def ch(message: types.Message):
 <b>MSG</b>➟ {ri.text}
 🌍<b>PROXY-IP</b> <code>{b}</code>
 <b>TOOK:</b> <code>{toc - tic:0.2f}</code>(s)
-🌟<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>
-<b>OWNER</b>: {await is_owner(ID)}
+<b>CHKBY</b>➟ <a href="tg://user?id={ID}">{FIRST}</a>🌟
+<b>OWNER</b>@mmenamore
 <b>BOT</b>: @{BOT_USERNAME}''')
 
 
