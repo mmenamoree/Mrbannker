@@ -39,14 +39,11 @@ BOT_ID = bot_info.id
 
 # USE YOUR ROTATING PROXY API IN DICT FORMAT http://user:pass@providerhost:port
 proxies = {
-           'http': 'http://nkaozoda-rotate:d3oinv9faiqj@p.webshare.io:80/',
-           'http': 'http://nkaozoda-rotate:d3oinv9faiqj@p.webshare.io:80/',
-           'http': 'http://gfzcrhty-rotate:xybgwrcinb4y@p.webshare.io:80/',
-           'http': 'http://gfzcrhty-rotate:xybgwrcinb4y@p.webshare.io:80/', 
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/',
-           'http': 'http://ugeibegc-rotate:qbj5qmrqs7rw@p.webshare.io:80/'                            
+           'http': 'http://osapxaxj-rotate:t9s3vu7m3ugb@p.webshare.io:80/',
+           'http': 'http://osapxaxj-rotate:t9s3vu7m3ugb@p.webshare.io:80/',
+           'http': 'http://osapxaxj-rotate:t9s3vu7m3ugb@p.webshare.io:80/',
+           'https': 'http://zzkzbyyp-rotate:g6z0y4jprc2v@p.webshare.io:80/',
+           'https': 'http://zzkzbyyp-rotate:g6z0y4jprc2v@p.webshare.io:80/'
 }
 
 session = requests.Session()
