@@ -115,7 +115,7 @@ async def binio(message: types.Message):
     BIN = message.text[len('/bin '):]
     if len(BIN) < 6:
         return await message.reply(
-                   'Envia un bin valido, oswa carino'
+                   'Envia un bin valido, mamon'
         )
     r = requests.get(
                f'http://binchk-api.vercel.app/bin={BIN}'
