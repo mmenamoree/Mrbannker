@@ -146,7 +146,7 @@ async def ch(message: types.Message):
         await dp.throttle('chr', rate=ANTISPAM)
     except Throttled:
         await message.reply('<b>Too many requests!</b>\n'
-                            f'Bloqueado por {ANTISPAM} segundos 👾')
+                            f'Bloqueado por {ANTISPAM} segundos ⚠️')
     else:
         if message.reply_to_message:
             cc = message.reply_to_message.text
@@ -154,7 +154,7 @@ async def ch(message: types.Message):
             cc = message.text[len('/chr '):]
 
         if len(cc) == 0:
-            return await message.reply("<b>Stripe Charged 4.99, ingrese su tarjeta</b>")
+            return await message.reply("<b>Stripe Charged 4.99, ingrese su tarjeta</b>⚠️")
 
         x = re.findall(r'\d+', cc)
         ccn = x[0]
